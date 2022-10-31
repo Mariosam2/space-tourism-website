@@ -1,9 +1,19 @@
 $gray: #979797;
+$almost-white: #D0D6F9;
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+body {
+    color: $almost-white ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
 
 img {
     max-width: 100%;
@@ -35,6 +45,8 @@ a {
     display: flex;
     flex-wrap: wrap;
 }
+
+
 
 
 .text-uppercase {

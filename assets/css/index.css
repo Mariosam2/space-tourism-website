@@ -56,6 +56,12 @@ nav {
   padding: 0;
 }
 
+body {
+  color: #D0D6F9;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -150,6 +156,14 @@ nav a:active {
 }
 
 /*#endregion */
+.container {
+  margin-bottom: 4rem;
+}
+
+body {
+  background-image: url(../home/background-home-desktop.jpg);
+}
+
 /* #region columns */
 .col {
   width: 500px;
@@ -167,29 +181,28 @@ nav a:active {
   text-transform: uppercase;
 }
 
-.space {
-  color: #D0D6F9;
-}
-
 .row.index {
   justify-content: space-between;
 }
 
 .explore {
-  width: 250px;
-  height: 250px;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   align-self: flex-end;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: box-shadow 0.3s ease;
 }
 
 .explore h4 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  background-color: #FFFFFF;
   color: #0B0D17;
   font-weight: 100;
+}
+
+.explore h4 a, .explore {
+  border-radius: 50%;
 }
 
 .explore:hover {

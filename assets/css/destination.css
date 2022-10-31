@@ -105,6 +105,12 @@ nav {
   padding: 0;
 }
 
+body {
+  color: #D0D6F9;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -150,16 +156,12 @@ a {
   margin-right: 1rem;
 }
 
+body {
+  background-image: url(../destination/background-destination-desktop.jpg);
+}
+
 .row.destination {
   margin-top: 5rem;
-}
-
-body {
-  color: #D0D6F9;
-}
-
-nav {
-  background-color: rgba(21, 25, 44, 0.7);
 }
 
 .destination-img {
@@ -171,11 +173,11 @@ nav {
   color: white;
 }
 
-.col.info {
+.info {
   align-self: flex-end;
 }
 
-.col.info h2, .col.info p {
+.info h2, .info p {
   padding: 2rem 0;
 }
 
@@ -207,7 +209,7 @@ nav {
   width: 58.3333333333%;
 }
 
-.col {
+.col-5 {
   width: 41.6666666667%;
 }
 

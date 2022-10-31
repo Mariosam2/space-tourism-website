@@ -4,7 +4,21 @@ $almost-white: #D0D6F9;
 $white : #FFFFFF;
 $gray: #979797;
 
+@mixin flexCenter(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.container {
+    margin-bottom: 4rem;
+}
+
+
+body {
+    background-image: url(../home/background-home-desktop.jpg);
+    
+}
 
 
 /* #region columns */
@@ -14,11 +28,6 @@ $gray: #979797;
 
 
 /* #endregion */
-
-
-
-
-
 
 
 
@@ -35,31 +44,30 @@ $gray: #979797;
         
 }
 
-.space {
-    color: $almost-white;
-}
+
 
 .row.index {
     justify-content: space-between;
 }
 
 .explore {
-    width: 250px;
-    height: 250px;
-    background-color: $white;
-    border-radius: 50%;
     align-self: flex-end;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: box-shadow 0.3s ease;
     
 }
 
 .explore h4  a{
+    @include flexCenter();
+    width: 250px;
+    height: 250px;
+    background-color: $white;
     color: $bg-primary;
     font-weight: 100;
     
+}
+
+.explore h4  a, .explore {
+    border-radius: 50%;
 }
 
 .explore:hover {

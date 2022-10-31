@@ -1,20 +1,17 @@
 @import 'header','text', 'common_rules';
 $bg-primary : #0B0D17;
-$bg-nav: #15192C;
 $almost-white: #D0D6F9;
+
+body {
+    background-image: url(../destination/background-destination-desktop.jpg);
+    
+}
 
 
 .row.destination {
     margin-top: 5rem;
 }
 
-body {
-    color: $almost-white ;
-}
-
-nav {
-    background-color: rgba($bg-nav , 0.7);
-}
 
 .destination-img {
     margin-top: 2rem;
@@ -27,11 +24,11 @@ nav {
     color: white;
 }
 
-.col.info {
+.info {
     align-self: flex-end;
 }
 
-.col.info h2, .col.info p {
+.info h2, .info p {
     padding: 2rem 0
 }
 
@@ -66,7 +63,7 @@ nav {
     
 }
 
-.col {
+.col-5 {
     width: calc(100%/12 * 5);
 }
 /* #endregion */

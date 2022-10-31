@@ -1,0 +1,71 @@
+@import 'text', 'header', 'common_rules';
+$bg-nav: #15192C;
+$bg-primary : #0B0D17;
+$gray: #979797;
+$almost-white: #D0D6F9;
+
+body {
+    background-image: url(../crew/background-crew-desktop.jpg);
+}
+
+
+h5 {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+
+
+/*#region columns */
+.col-8 {
+    width: calc(100%/12 * 8);
+    
+}
+
+.col-4 {
+    width: calc(100%/12 * 4);
+}
+/* #endregion */
+
+nav {
+    background-color: rgba($bg-nav , 0.7);
+}
+
+.crew-name {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+
+.crew-img img {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+   
+}
+
+.nav-crew {
+    margin-top: 6rem;
+}
+
+.nav-crew a {
+    height: 15px;
+    width: 15px;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background-color: rgba($gray, 0.5);
+    transition: all 0.2s ease;
+    
+}
+
+.nav-crew a:hover {
+    filter: brightness(200%);
+}
+
+.nav-crew a:active {
+    background-color: white;
+}
+
+.bio {
+    padding-right: 15rem;
+}
