@@ -1,0 +1,72 @@
+@import 'header','text', 'common_rules';
+$bg-primary : #0B0D17;
+$bg-nav: #15192C;
+$almost-white: #D0D6F9;
+
+
+.row.destination {
+    margin-top: 5rem;
+}
+
+body {
+    color: $almost-white ;
+}
+
+nav {
+    background-color: rgba($bg-nav , 0.7);
+}
+
+.destination-img {
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
+
+
+.subheading-1 {
+    color: white;
+}
+
+.col.info {
+    align-self: flex-end;
+}
+
+.col.info h2, .col.info p {
+    padding: 2rem 0
+}
+
+.destinations a {
+    margin: 0 1rem;
+    padding: 0.5rem 0;
+    color: $almost-white;
+    border-bottom: 2px solid transparent;
+    transition: border 0.2s ease;
+}
+
+.destinations a:hover {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.data {
+    display: inline-block;
+    margin-right: 3rem;
+    margin-top: 2rem;
+    
+}
+
+.data >* {
+    padding: 0.5rem 0;
+}
+
+
+/*#region columns */
+.col-7 {
+    width: calc(100%/12 * 7);
+    
+}
+
+.col {
+    width: calc(100%/12 * 5);
+}
+/* #endregion */

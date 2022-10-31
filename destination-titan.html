@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="./assets/css/destination.css">
+  <script src="./assets/js/app.js" type="module" defer></script>
+</head>
+<body>
+  
+    <img class="bg-img" src="./assets/destination/background-destination-desktop.jpg" alt="">
+    <header id="site_header">
+      <div class="logo"><img src="./assets/shared/logo.svg" alt="logo"></div>
+      <nav>
+        <div class="line"></div>
+        <div class="layover"></div>
+        <a href="index.html"><strong>00</strong> Home</a>
+        <a href="destination-moon.html"><strong>01</strong> Destination</a>
+        <a href="crew-commander.html"><strong>02</strong> Crew</a>
+        <a href="technology-vehicle.html"><strong>03</strong> Technology</a>
+      </nav>
+    </header>
+    <!-- /#site_header -->
+    <div id="app">
+      <main id="site_main">
+        <div class="container">
+          <div class="row destination">
+            <div class="col-7">
+              <h5 class="text-uppercase"><span class="text-gray">01</span>pick your destination</h5>
+              <img class="destination-img" :src="destinations[3].images.png" :alt="destinations[3].name">
+
+
+            </div>
+
+            <div class="col info">
+              <div class="destinations">
+                <a class="text-uppercase":href="'destination-' + destination.name.toLowerCase() + '.html'" v-for="destination in destinations">{{destination.name}}</a>
+              </div>
+              <h2 class="text-uppercase">{{destinations[3].name}}</h2>
+              <p>{{destinations[3].description}}</p>
+              <hr>
+              <div class="data">
+                <span class="subheading-2 text-uppercase">avg. distance</span>
+                <div class="subheading-1 text-uppercase">{{destinations[3].distance}}</div>
+              </div>
+              <div class="data">
+                <span class="subheading-2 text-uppercase">est. traveltime</span>
+                <div class="subheading-1 text-uppercase">{{destinations[3].travel}}</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+      </main>
+      
+    </div> 
+</body>
+</html>

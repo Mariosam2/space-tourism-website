@@ -1,0 +1,75 @@
+@import 'text', 'common_rules', 'header';
+$bg-primary : #0B0D17;
+$almost-white: #D0D6F9;
+$white : #FFFFFF;
+$gray: #979797;
+
+
+
+
+/* #region columns */
+.col {
+    width: 500px;
+}
+
+
+/* #endregion */
+
+
+
+
+
+
+
+
+/* #region main */
+#site_main {
+    height: 700px;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.text-uppercase {
+    text-transform: uppercase;
+        
+}
+
+.space {
+    color: $almost-white;
+}
+
+.row.index {
+    justify-content: space-between;
+}
+
+.explore {
+    width: 250px;
+    height: 250px;
+    background-color: $white;
+    border-radius: 50%;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.3s ease;
+    
+}
+
+.explore h4  a{
+    color: $bg-primary;
+    font-weight: 100;
+    
+}
+
+.explore:hover {
+    box-shadow: 0 0 0 50px rgba(151, 151, 151, 0.5);
+    cursor: pointer;
+}
+
+
+
+/* #endregion */
+
+
+

@@ -1,0 +1,70 @@
+// Colors
+$font-barlow: 'Barlow Condensed', sans-serif;
+$font-bellefair: 'Bellefair', serif;
+
+
+
+html {
+    font-size: 18px;
+    font-family: $font-barlow;
+    letter-spacing: 0.1em;
+}
+
+
+// Heading 1, Subheading 1
+h1 {
+    font-size: 8.3rem;
+    
+    
+    
+}
+
+.subheading-1{
+    font-size: 1.5rem;
+    font-family: $font-bellefair;
+}
+
+
+//Heading 2, Subheading 2
+h2 {
+    font-size: 5.5rem;
+    
+}
+
+.subheading-2 {
+    font-size: 0.8rem;
+    font-family: $font-barlow;
+    letter-spacing: 0.2em;
+}
+
+
+h1, h2, h3, h4{
+    font-family: $font-bellefair;
+}
+
+
+h1, h2, h3, h4, h5 {
+    color: white;
+    
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-family: $font-barlow;
+    letter-spacing: 0.3em;
+}
+
+
+//Navbar text 
+nav {
+    font-family: $font-barlow;
+    letter-spacing: 0.2em;
+}

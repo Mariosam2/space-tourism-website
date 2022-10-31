@@ -1,0 +1,49 @@
+/* #region header */
+header {
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+  padding-left: 3rem;
+}
+
+.line {
+  position: absolute;
+  width: 55%;
+  background-color: #979797;
+  height: 1px;
+  opacity: 0.5;
+  right: 100%;
+  top: 50%;
+  z-index: 9999;
+  translate: 5% -50%;
+}
+
+nav {
+  position: relative;
+  padding: 0 2rem;
+  padding-left: 5rem;
+  flex-basis: 60%;
+  margin-left: auto;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav a {
+  text-transform: uppercase;
+  color: white;
+  padding: 2rem 0;
+  margin: 0 1rem;
+  box-shadow: 0 3px 0 transparent;
+  transition: box-shadow 0.2s ease;
+}
+
+nav a:hover {
+  box-shadow: 0 3px 0 #979797;
+}
+
+nav a:active {
+  box-shadow: 0 3px 0 #FFFFFF;
+}
+
+/*#endregion *//*# sourceMappingURL=header.css.map */
