@@ -1,3 +1,52 @@
+/* #region header */
+header {
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+  padding-left: 3rem;
+}
+
+.line {
+  position: absolute;
+  width: 55%;
+  background-color: #979797;
+  height: 1px;
+  opacity: 0.5;
+  right: 100%;
+  top: 50%;
+  z-index: 9999;
+  translate: 5% -50%;
+}
+
+nav {
+  position: relative;
+  padding: 0 2rem;
+  padding-left: 5rem;
+  flex-basis: 60%;
+  margin-left: auto;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav a {
+  text-transform: uppercase;
+  color: white;
+  padding: 2rem 0;
+  margin: 0 1rem;
+  box-shadow: 0 3px 0 transparent;
+  transition: box-shadow 0.2s ease;
+}
+
+nav a:hover {
+  box-shadow: 0 3px 0 #979797;
+}
+
+nav a:active {
+  box-shadow: 0 3px 0 #FFFFFF;
+}
+
+/*#endregion */
 html {
   font-size: 18px;
   font-family: "Barlow Condensed", sans-serif;
@@ -82,6 +131,10 @@ a {
   display: inline-block;
 }
 
+p {
+  line-height: 1.7;
+}
+
 .container {
   width: 80%;
   max-width: 1320px;
@@ -92,6 +145,11 @@ a {
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.page-title {
+  margin-top: 5rem;
+  margin-bottom: 6rem;
 }
 
 .text-uppercase {
@@ -107,55 +165,28 @@ a {
   margin-right: 1rem;
 }
 
-/* #region header */
-header {
-  display: flex;
-  align-items: center;
-  padding-top: 3rem;
-  padding-left: 3rem;
+/*#region columns */
+.col-8 {
+  width: 66.6666666667%;
 }
 
-.line {
-  position: absolute;
-  width: 55%;
-  background-color: #979797;
-  height: 1px;
-  opacity: 0.5;
-  right: 100%;
-  top: 50%;
-  z-index: 9999;
-  translate: 5% -50%;
+.col-4 {
+  width: 33.3333333333%;
 }
 
-nav {
-  position: relative;
-  padding: 0 2rem;
-  padding-left: 5rem;
-  flex-basis: 60%;
-  margin-left: auto;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.1);
+.col {
+  width: 500px;
 }
 
-nav a {
-  text-transform: uppercase;
-  color: white;
-  padding: 2rem 0;
-  margin: 0 1rem;
-  box-shadow: 0 3px 0 transparent;
-  transition: box-shadow 0.2s ease;
+.col-7 {
+  width: 58.3333333333%;
 }
 
-nav a:hover {
-  box-shadow: 0 3px 0 #979797;
+.col-5 {
+  width: 41.6666666667%;
 }
 
-nav a:active {
-  box-shadow: 0 3px 0 #FFFFFF;
-}
-
-/*#endregion */
+/* #endregion */
 .container {
   margin-bottom: 4rem;
 }

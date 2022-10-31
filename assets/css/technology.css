@@ -188,45 +188,57 @@ p {
 
 /* #endregion */
 body {
-  background-image: url(../crew/background-crew-desktop.jpg);
+  background-image: url(../technology/background-technology-desktop.jpg);
 }
 
 nav {
   background-color: rgba(21, 25, 44, 0.7);
 }
 
-.crew-name {
+.tech-nav {
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tech-nav a {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #979797;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.tech-nav a:hover {
+  border-color: white;
+}
+
+.tech-nav a:active {
+  background-color: white;
+  color: #0B0D17;
+}
+
+.info {
+  display: flex;
+}
+
+.flex-item {
+  padding: 0 3rem;
+}
+
+h3 {
   padding-top: 1rem;
   padding-bottom: 1.5rem;
 }
 
-.crew-img img {
+.tech-img {
   position: absolute;
-  bottom: 0;
-  right: 10%;
-}
-
-.nav-crew {
-  margin-top: 6rem;
-}
-
-.nav-crew a {
-  height: 15px;
-  width: 15px;
-  margin-right: 1rem;
-  border-radius: 50%;
-  background-color: rgba(151, 151, 151, 0.5);
-  transition: all 0.2s ease;
-}
-
-.nav-crew a:hover {
-  filter: brightness(200%);
-}
-
-.nav-crew a:active {
-  background-color: white;
-}
-
-.bio {
-  padding-right: 15rem;
-}/*# sourceMappingURL=crew.css.map */
+  right: 0;
+  bottom: 10%;
+}/*# sourceMappingURL=technology.css.map */

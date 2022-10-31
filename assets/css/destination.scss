@@ -1,4 +1,4 @@
-@import 'header','text', 'common_rules';
+@import 'header','text', 'common_rules', 'columns';
 $bg-primary : #0B0D17;
 $almost-white: #D0D6F9;
 
@@ -6,18 +6,6 @@ body {
     background-image: url(../destination/background-destination-desktop.jpg);
     
 }
-
-
-.row.destination {
-    margin-top: 5rem;
-}
-
-
-.destination-img {
-    margin-top: 2rem;
-    padding-top: 2rem;
-}
-
 
 
 .subheading-1 {

@@ -1,0 +1,22 @@
+/*#region columns */
+.col-8 {
+  width: 66.6666666667%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+}
+
+.col {
+  width: 500px;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+}
+
+/* #endregion *//*# sourceMappingURL=columns.css.map */

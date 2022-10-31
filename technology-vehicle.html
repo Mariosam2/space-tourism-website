@@ -1,32 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="./assets/css/technology.css">
+  <script src="./assets/js/app.js" type="module" defer></script>
 </head>
+
 <body>
-
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  03 Space launch 101
-
-  1
-  2
-  3
-
-  The terminology...
-  Launch vehicle
-
-  A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
-  payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
-  WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
-  it's quite an awe-inspiring sight on the launch pad!
+  <header id="site_header">
+    <div class="logo"><img src="./assets/shared/logo.svg" alt="logo"></div>
+    <nav>
+      <div class="line"></div>
+      <div class="layover"></div>
+      <a href="index.html"><strong>00</strong> Home</a>
+      <a href="destination-moon.html"><strong>01</strong> Destination</a>
+      <a href="crew-commander.html"><strong>02</strong> Crew</a>
+      <a href="technology-vehicle.html"><strong>03</strong> Technology</a>
+    </nav>
+  </header>
+  <!-- /#site_header -->
+  <div id="app">
+    <main id="site_main">
+      <div class="container">
+        <h5 class="text-uppercase page-title"><span class="text-gray">03</span>space launch 101</h5>
+        <div class="row">
+          <div class="col-8 info">
+            <div class="tech-nav">
+              <a href="technology-vehicle.html">1</a>
+              <a href="technology-spaceport.html">2</a>
+              <a href="technology-capsule.html">3</a>
+            </div>
+            <div class="flex-item">
+              <div class="subheading-2 text-uppercase">the terminology...</div>
+              <h3 class="text-uppercase tech-title">{{technology[0].name}}</h3>
+              <p>{{technology[0].description}}</p>
+            </div>
+            
+          </div>
+          <div class="col-4">
+            <img class="tech-img" :src="technology[0].images.portrait" alt="">
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- /#site_main -->
+  </div>
 </body>
+
 </html>

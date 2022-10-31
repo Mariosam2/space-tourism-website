@@ -1,0 +1,70 @@
+@import 'header','text', 'common_rules', 'columns';
+$bg-nav: #15192C;
+$bg-primary : #0B0D17;
+$gray: #979797;
+$almost-white: #D0D6F9;
+
+@mixin flexCenter(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-image: url(../technology/background-technology-desktop.jpg);
+}
+
+nav {
+    background-color: rgba($bg-nav , 0.7);
+}
+
+
+
+.tech-nav {
+    padding-right:1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tech-nav a {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid $gray;
+    color: white;
+    font-size: 1.5rem;
+    @include flexCenter();
+    transition: all 0.2s ease;
+}
+
+.tech-nav a:hover {
+    border-color: white;
+}
+
+.tech-nav a:active {
+    background-color: white;
+    color: $bg-primary;
+}
+
+
+
+.info {
+    display: flex;
+}
+
+.flex-item {
+    padding: 0 3rem;
+}
+
+h3 {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.tech-img {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    
+}

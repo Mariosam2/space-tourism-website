@@ -30,6 +30,10 @@ a {
   display: inline-block;
 }
 
+p {
+  line-height: 1.7;
+}
+
 .container {
   width: 80%;
   max-width: 1320px;
@@ -40,6 +44,11 @@ a {
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.page-title {
+  margin-top: 5rem;
+  margin-bottom: 6rem;
 }
 
 .text-uppercase {
