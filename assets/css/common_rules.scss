@@ -7,6 +7,7 @@ $almost-white: #D0D6F9;
 }
 
 body {
+    min-height: 900px;
     color: $almost-white ;
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,21 +40,18 @@ p {
 }
 
 .container {
-    width: 80%;
+    width: 100%;
     max-width: 1320px;
-    margin-inline: auto;
+    margin: 0 auto;
     padding: 2rem;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 5rem;
 }
 
-.page-title {
-    margin-top: 5rem;
-    margin-bottom: 6rem;
-}
 
 
 .text-uppercase {
@@ -68,3 +66,5 @@ p {
     color: $gray;
     margin-right: 1rem;
 }
+
+
